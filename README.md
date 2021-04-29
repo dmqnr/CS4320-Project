@@ -19,13 +19,13 @@ REQUIREMENTS FOR YOUR AUGUR INSTANCE AND DATABASE:
 
 6. If you're using ubuntu and the database is on a server these are the commands and steps for postgres
 
-'\c augur' - will switch to augur database
+          '\c augur' - will switch to augur database
 
-'ALTER TABLE augur_data.contributors;' - alter the contributors table
+          'ALTER TABLE augur_data.contributors;' - alter the contributors table
 
-'ADD COLUMN cntrb_hireable bool;' - adds a new column to our table
-          
-'SELECT * FROM augur_data.contributors;' will display the contributors table and its entries. This is a good way to check if the column was added. NOTE: if the tables are messed up do '\x' before running the query to enable expanded view and the tables should be organized. 
+          'ADD COLUMN cntrb_hireable bool;' - adds a new column to our table
+
+          'SELECT * FROM augur_data.contributors;' will display the contributors table and its entries. This is a good way to check if the column was added. NOTE: if the tables are messed up do '\x' before running the query to enable expanded view and the tables should be organized. 
       
 7. You can now start augur's data collection but it is likely you'll need to collect data on another repo because the current data in contributors might not change. In augur_data.repos you can add another repository however I'm not sure how to get augur to collect data on a different repo. I will need to consult with Prof Goggins before the next sprint.
 
