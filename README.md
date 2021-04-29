@@ -14,15 +14,15 @@ REQUIREMENTS FOR YOUR AUGUR INSTANCE AND DATABASE:
 
 5. There are two ways to make changes to the augur database if it's on a deployment server:
       1. Use Navicat and connect your database to it.
-         If your augur database is on a physical machine it should be easier to add a new column to it and it should be easier to connect to it. (NOTE: Connecting Navicat to a            database on a server is tricky and I will add instructions for that before the last sprint) 
+          If your augur database is on a physical machine it should be easier to add a new column to it and it should be easier to connect to it. (NOTE: Connecting Navicat to a            database on a server is tricky and I will add instructions for that before the last sprint) 
       2. Use command line
 
 6. If you're using ubuntu and the database is on a server these are the commands and steps for postgres
-      '\c augur' - will switch to augur database
-      'ALTER TABLE augur_data.contributors;' - we're going to alter the contributors table
-      'ADD COLUMN cntrb_hireable bool;' - adds a new column to our table
-      
-      'SELECT * FROM augur_data.contributors;' will display the contributors table and its entries. This is a good way to check if the column was added. NOTE: if the tables are        messed up do '\x' before running the query to enable expanded view and the tables should be organized. 
+          '\c augur' - will switch to augur database
+          'ALTER TABLE augur_data.contributors;' - we're going to alter the contributors table
+          'ADD COLUMN cntrb_hireable bool;' - adds a new column to our table
+          
+          'SELECT * FROM augur_data.contributors;' will display the contributors table and its entries. This is a good way to check if the column was added. NOTE: if the tables are        messed up do '\x' before running the query to enable expanded view and the tables should be organized. 
       
 7. You can now start augur's data collection but it is likely you'll need to collect data on another repo because the current data in contributors might not change. In augur_data.repos you can add another repository however I'm not sure how to get augur to collect data on a different repo. I will need to consult with Prof Goggins before the next sprint.
 
