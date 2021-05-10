@@ -66,3 +66,12 @@ USING JUPYTER NOTEBOOK (CHANGES TO AUGUR AND DATABASE NEED TO BE COMPLETED FIRST
                  cntrb_hireable = 't'
 6. Run each of the cells and you will get an output displayed. 
 
+7. If you want to connect to my deployment server and skip all the changes to augur and the database here is the information you would use in jupyter notebook when connecting to the database 
+
+          dialect+driver: postgresql
+          username: augur
+          password: password
+          host: 
+          port: 5432
+          database: augur
+
