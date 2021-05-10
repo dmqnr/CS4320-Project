@@ -46,6 +46,7 @@ USING JUPYTER NOTEBOOK (CHANGES TO AUGUR AND DATABASE NEED TO BE COMPLETED FIRST
           pip install psycopg2
 3. Start your jupyter notebook and create a new file.
 4. In one cell add the following code:
+          
           %reload_ext sql
           from sqlalchemy import create_engine
           //CONNECTING TO DATABASE FORMAT
@@ -54,6 +55,7 @@ USING JUPYTER NOTEBOOK (CHANGES TO AUGUR AND DATABASE NEED TO BE COMPLETED FIRST
           %sql postgresql://augur:password@ec2-18-220-196-21.us-east-2.compute.amazonaws.com:5432/augur
 
 5. In the next cell add the SQL query:
+          
           //EXAMPLE
           %%sql
           SELECT 
