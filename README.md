@@ -1,5 +1,20 @@
 # CS4320-Project
 
+#################### HOW TO RUN THE JUPYTER NOTEBOOK ########################
+
+1. Make sure jupyter notebook is installed on your machine
+2. Need to install these 3 libraries:
+          pip install ipython-sql
+          pip install sqlalchemy
+          pip install psycopg2
+3. Add the jupyter notebook file found in this repository.
+4. Run the two cells in the notebook
+5. DONE!
+6. You can customize the queries if you like. They are exactly like SQL queries. 
+
+
+##################### HOW TO REPLICATE THIS PROJECT #########################
+
 CHANGES TO AUGUR
 
 1. Augur already uses Github's API so there is only one additional line of code needed to collect whether or not a user is hireable. 
@@ -13,7 +28,7 @@ CHANGES TO AUGUR
 4. Save the file and rebuild augur ('make rebuild-dev')
 
 
-CHANGES TO DATABASE
+CHANGES TO THE DATABASE
 
 There are two ways to make changes to the augur database if it's on a deployment server:
       1. Use Navicat and connect your database to it.
