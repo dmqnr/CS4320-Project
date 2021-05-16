@@ -4,13 +4,15 @@
 
 1. Make sure jupyter notebook is installed on your machine
 2. Need to install these 3 libraries:
+          
           pip install ipython-sql
           pip install sqlalchemy
           pip install psycopg2
-3. Add the jupyter notebook file found in this repository. (Jupyter Notebook Python Files/Augur .ipynb)
-4. Run the cells with code in the notebook
-5. DONE!
-6. You can customize the queries if you like. They are exactly like SQL queries. 
+
+4.Add the jupyter notebook file found in this repository. (Jupyter Notebook Python Files/Augur .ipynb)
+5. Run the cells with code in the notebook
+6. DONE!
+7. You can customize the queries if you like. They are exactly like SQL queries. 
 
 
 ##################### HOW TO REPLICATE THIS PROJECT #########################
